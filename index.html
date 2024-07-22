@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #015BA1;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+}
+
+.profile-info h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 1.2em;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #FB8F02;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.slider {
+    position: relative;
+    max-width: 400px;
+	height:400px;	
+    margin-bottom: 20px;
+
+    margin-left:20px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #015BA1;
+    border-bottom: 2px solid #015BA1;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #015BA1;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.contact a {
+    color: #015BA1;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #015BA1;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile-info">
+            <h1 style="color:yellow">SURYA M</h1>
+            <h2 style="color:yellow">22UCS161</h2>
+            <p>Department or Role</p>
+        </div>
+        <div class="nav-links">
+            <a href="#slider">Image Slider</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Image Slider -->
+        <section id="slider" class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="C:\Users\ELCOT\Desktop\portfolio\image.jpg "width="100px" alt="Profile Picture 1">
+                </div>
+                <div class="slide">
+                    <img src="image2.jpg" alt="Profile Picture 2">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="Profile Picture 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Sc.Computer Science</td>
+                        <td>St.Joseph's College (Autonomous) Tiruchirapalli-2 </td>
+                        <td>2022-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary </td>
+                        <td>Britto Higher Secondary School,Kallal</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python Development</li>
+                <li>C++ Programming </li>
+                <li>Type Writting </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Protfolio</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Game development</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your-soorivijaya28@gmail.com">soorivijaya28@gmail.com.com</a></p>
+            <p>Phone:9585407701</p>
+            <p>Whats app:9585407701</p>
+            <p>Linkdin:<a href="https://www.linkedin.com/in/surya-muthaiya-5a906a281/">SURYA M</a></p>
+            <p>Address:292,Keelakottai
+                      Sivagangai-630313</p>
+            <!-- Add more contact details if needed -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
